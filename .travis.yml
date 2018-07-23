@@ -15,6 +15,9 @@ script:
     "git clone https://github.com/rgreenblatt/native-samples &&
      cd ./native-samples &&
      git checkout $TRAVIS_COMMIT &&
+     echo $TRAVIS_COMMIT &&
+     echo $TRAVIS_COMMIT_MESSAGE &&
+     echo $TRAVIS_BRANCH &&
      git log -n1 &&
      ./gradlew build &&
      echo \"Finished Ubuntu compile.\"
