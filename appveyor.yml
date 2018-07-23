@@ -22,7 +22,6 @@ init:
     }
 install:
 - ps: ./gradlew clean
-cache: C:\Users\appveyor\.gradle
 build_script:
 - ps: >-
     echo $env:JAVA_HOME
