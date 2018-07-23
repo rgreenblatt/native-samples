@@ -1,4 +1,1 @@
-
-include("samples-dev")
-
-includeBuild("samples-dev/plugins")
+rootProject.name = 'app'
