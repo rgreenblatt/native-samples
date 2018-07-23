@@ -17,7 +17,8 @@ script:
      git checkout $TRAVIS_COMMIT &&
      git log -n1 &&
      ./gradlew build &&
-     echo \"Finished Ubuntu compile.\""
+     echo \"Finished Ubuntu compile.\"
+     echo \"Finished Travis.\""
 build:
   - true
 
