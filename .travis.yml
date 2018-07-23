@@ -11,7 +11,7 @@ install:
   - travis_wait 45 docker pull greenblattryan/ctrelinuxbase:latest
 
 script:
-  - docker run --user ubuntu greenblattryan/ctrelinuxbase:latest /bin/bash -l -c
+  - docker run greenblattryan/ctrelinuxbase:latest /bin/bash -l -c
     "git clone https://github.com/rgreenblatt/native-samples &&
      cd ./native-samples &&
      git checkout $TRAVIS_COMMIT &&
